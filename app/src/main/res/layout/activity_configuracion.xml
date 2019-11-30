@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="interfaz.app3.pm1.juegodelgato.Configuracion">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="3">
+        <include layout="@layout/cascaron"></include>
+        <EditText
+            android:id="@+id/jugador1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Jugador 1" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <RadioButton
+                android:id="@+id/maquina"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="30dp"
+                android:layout_marginTop="20dp"
+                android:text="Yo vs Maquina"
+                android:onClick="onRadioButtonClicked" />
+
+            <RadioButton
+                android:id="@+id/multi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="30dp"
+                android:layout_marginTop="20dp"
+                android:text="Yo vs Jugador 2"
+                android:onClick="onRadioButtonClicked"/>
+
+            <EditText
+                android:id="@+id/jugador2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Jugador 2" />
+
+            <RadioButton
+                android:id="@+id/salir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="30dp"
+                android:layout_marginTop="20dp"
+                android:text="Salir"
+                android:onClick="onRadioButtonClicked"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+</ScrollView>
